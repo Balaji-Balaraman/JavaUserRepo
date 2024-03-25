@@ -15,7 +15,7 @@
     <p class="error-message"><%= errorMessage %></p>
     <% } %>
 
-    <form action="/UserRegistration/login" method="post">
+    <form action="/login" method="post">
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required><br>
 
