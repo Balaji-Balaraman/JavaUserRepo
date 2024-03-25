@@ -3,26 +3,44 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
-    <welcome-file-list>
+<!--    <welcome-file-list>-->
+<!--&lt;!&ndash;        <welcome-file>&ndash;&gt;-->
+<!--&lt;!&ndash;            index.jsp&ndash;&gt;-->
+<!--&lt;!&ndash;        </welcome-file>&ndash;&gt;-->
 <!--        <welcome-file>-->
-<!--            index.jsp-->
+<!--            login.jsp-->
 <!--        </welcome-file>-->
-        <welcome-file>
-            login.jsp
-        </welcome-file>
-    </welcome-file-list>
-     <servlet>
-         <servlet-name>
-             LoginServlet
-         </servlet-name>
-         <servlet-class>
-             com.rca.app.userregistration.LoginServlet
-         </servlet-class>
-     </servlet>
+<!--    </welcome-file-list>-->
+<!--     <servlet>-->
+<!--         <servlet-name>-->
+<!--             LoginServlet-->
+<!--         </servlet-name>-->
+<!--         <servlet-class>-->
+<!--             com.rca.app.userregistration.LoginServlet-->
+<!--         </servlet-class>-->
+<!--     </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>-->
+<!--            LoginServlet-->
+<!--        </servlet-name>-->
+<!--        <url-pattern>/login</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <display-name>User Registration App</display-name>
+
+    <!-- Servlet Mapping -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.rca.app.userregistration.LoginServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>
-            LoginServlet
-        </servlet-name>
+        <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>
